@@ -99,3 +99,5 @@
   #define DEBUG_PRINTF(...)
 #endif
 
+#define BOARRD_INFO_NAME    "ESP8266"
+
