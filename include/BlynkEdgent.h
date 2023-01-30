@@ -5,7 +5,6 @@ extern "C" {
   void app_loop();
   void restartMCU();
 }
-
 #include "Settings.h"
 #include <BlynkSimpleEsp8266_SSL.h>
 
@@ -30,7 +29,7 @@ extern "C" {
 #endif
 
 #if !defined(BLYNK_TEMPLATE_ID) || !defined(BLYNK_DEVICE_NAME)
-#error "Please specify your BLYNK_TEMPLATE_ID and BLYNK_DEVICE_NAME"
+  #error "Please specify your BLYNK_TEMPLATE_ID and BLYNK_DEVICE_NAME"
 #endif
 
 BlynkTimer edgentTimer;
