@@ -118,28 +118,28 @@ void setup() {
   //Setup connect to wifi
   WiFi.begin(ssid_host,pass_host); 
 
-  long timer_start = millis();
-  while(WiFi.status()!=WL_CONNECTED ){
-    void led_init();
-    // Serial.print("...");
-    if (millis() - timer_start > 30000)
-    {
-      Serial.println("Connect to STA is failed");
-      break;
-    }
-  }
+  // long timer_start = millis();
+  // while(WiFi.status()!=WL_CONNECTED ){
+  //   void led_init();
+  //   // Serial.print("...");
+  //   if (millis() - timer_start > 30000)
+  //   {
+  //     Serial.println("Connect to STA is failed");
+  //     break;
+  //   }
+  // }
 
   // Set up DNS Server
   
 
-  if (WiFi.status()==WL_CONNECTED)
-  {
-    digitalWrite(LED_STATUS_PIN, HIGH);
-    IPAddress mySTAIP = WiFi.localIP();
-    Serial.println("Connected: Mod STA");
-    Serial.println(mySTAIP);
-    dnsServer.start(DNS_PORT, CONFIG_AP_URL, mySTAIP);
-  }
+  // if (WiFi.status()==WL_CONNECTED)
+  // {
+  //   digitalWrite(LED_STATUS_PIN, HIGH);
+  //   IPAddress mySTAIP = WiFi.localIP();
+  //   Serial.println("Connected: Mod STA");
+  //   Serial.println(mySTAIP);
+  //   dnsServer.start(DNS_PORT, CONFIG_AP_URL, mySTAIP);
+  // }
   // else
   // {
     WiFi.mode(WIFI_OFF);
