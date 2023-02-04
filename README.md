@@ -1,17 +1,15 @@
-# Demo_Esp8266
+# dev_weblocal
 
-## Web-control.
+## Environment.
+Ubuntu 20-04.
+VS-code.
+PlatfromIO.
 
-https://blynk.cloud/dashboard/235210/global/filter/1461971/organization/235210/devices/1096544/dashboard
+Hardware:
+NodeMCU ESP-8266
 
-quoctuan.iot@gmail.com
-
-tuaniot12345678@
 
 ## External module
 
-Led build-in
+sudo chmod a+rw /dev/ttyS0
 
-Bluetooth
-
-Servo
