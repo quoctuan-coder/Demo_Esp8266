@@ -13,3 +13,4 @@ NodeMCU ESP-8266
 
 sudo chmod a+rw /dev/ttyS0
 
+## Section: access point mode
