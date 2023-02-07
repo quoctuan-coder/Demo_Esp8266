@@ -10,6 +10,8 @@ ESP8266HTTPUpdateServer httpUpdater;
 #define USE_AP_MODE
 // #define USE_STA_MODE
 #define USE_DNS
+int numOfDevices = 0;
+int pre_numOfDevices = 0;
 
 const char *ssid_station = "ICVN_Cashless";
 const char *pass_station = "12345678";
@@ -174,6 +176,17 @@ void loop() {
   dnsServer.processNextRequest();
   #endif
   webServer.handleClient();
+  numOfDevices = WiFi.softAPgetStationNum(); // Get the number of devices connected to the access point
+  if (pre_numOfDevices != numOfDevices)
+  {
+    Serial.println("__Debug: Device connected!");
+    Serial.println("__Debug: Number of connected devices: " + String(numOfDevices));
+    // Blink led to check connected.
+    digitalWrite(LED_STATUS_PIN, HIGH);
+    delay(500);
+    digitalWrite(LED_STATUS_PIN, LOW);
+  }
+  pre_numOfDevices = numOfDevices;
 }
 //==========Chương trình con=================//
 
