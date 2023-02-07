@@ -23,8 +23,6 @@ void on();
 void off();
 void mainpage();
 
-
-//=========Biến chứa mã HTLM Website==//
 const char MainPage[] PROGMEM = R"=====(
   <!DOCTYPE html> 
   <html>
@@ -47,7 +45,6 @@ const char MainPage[] PROGMEM = R"=====(
         <button ><a href="/off">OFF</a></button>
         </form>
       </div>
-
    </body> 
   </html>
 )=====";
