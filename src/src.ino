@@ -72,7 +72,7 @@ void setup() {
   randomSeed(os_random());
 
   // start serial
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println();
   // Start EEPROM
   EEPROM.begin(4096);
