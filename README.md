@@ -1,16 +1,16 @@
-# dev_weblocal
+# Deauther
 
-## Environment.
-Ubuntu 20-04.
-VS-code.
-PlatfromIO.
+This support GUI web.
 
-Hardware:
-NodeMCU ESP-8266
+# firmware 
 
+- [firmware oled and web](firmware/)
 
-## External module
+## Features
 
-sudo chmod a+rw /dev/ttyS0
+- Disconnect any WiFi 2.4Ghz after scan and disconnect all device that connected to router.
+- Captive portal WiFi, Facebook, Zalo, Phone, Twitter.
+- Attack và Captive portal có thể hoạt động cùng lúc.
+- Save information user into File system directly
+- Setting on website
 
-## Section: access point mode
