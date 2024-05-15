@@ -116,7 +116,7 @@ String getContentType(String filename) {
   if (server.hasArg("download"))
     return String(F("application/octet-stream"));
   else if (filename.endsWith(str(W_DOT_GZIP)))
-    filename = filename.substring(0, filename.length() - 3);
+    return str(W_GZIP);
   else if (filename.endsWith(str(W_DOT_HTM)))
     return str(W_HTML);
   else if (filename.endsWith(str(W_DOT_HTML)))
